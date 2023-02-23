@@ -1,0 +1,44 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap");
+
+@import "const";
+@import "header";
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $body-font;
+  color: $black-color;
+  font-weight: $font-regular;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1620px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.btn {
+  background-color: $primary-color;
+  border: 1px solid #303030;
+  border-radius: 45px;
+  color: $title-color;
+}
