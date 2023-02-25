@@ -1,0 +1,29 @@
+.partners {
+  padding: 150px 0;
+  background-color: $bg-color;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 155px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .partners {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partners {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .partners {
+    padding: 30px 0;
+  }
+}
