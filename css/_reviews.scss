@@ -1,0 +1,63 @@
+.reviews {
+  border-top: 1px solid $title-color;
+  padding: 150px 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  &__item {
+    background: #ffffff;
+    border: 1px solid $black-color;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  &__name {
+    font-weight: $font-black;
+    font-size: 26px;
+    line-height: 39px;
+    color: $title-color;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: $font-regular;
+    font-size: 18px;
+    line-height: 27px;
+    color: $title-color;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reviews {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews {
+    padding: 80px 0;
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__name {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reviews {
+    padding: 40px 0;
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+    }
+  }
+}
